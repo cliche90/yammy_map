@@ -85,7 +85,7 @@ var MainFrame = {
             })
         });
     }
-}F;
+}
 
 $(document).ready(() => {
     MainFrame.initMap();
