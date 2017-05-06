@@ -4,8 +4,8 @@ html(lang='en')
     link(rel='stylesheet', href='https://openlayers.org/en/v4.1.1/css/ol.css', type='text/css')
     style.
       .map {
-      height: 400px;
-      width: 100%;
+          height: 400px;
+          width: 100%;
       }
     script(src='https://openlayers.org/en/v4.1.1/build/ol.js', type='text/javascript')
     title OpenLayers example
@@ -14,11 +14,11 @@ html(lang='en')
     #map.map
     script(type='text/javascript').
       var map = new ol.Map({
-      target: 'map',
-      layers: [
-      new ol.layer.Tile({
-      source: new ol.source.OSM()
-      })
+          target: 'map',
+          layers: [
+              new ol.layer.Tile({
+              source: new ol.source.OSM()
+          })
       ],
       view: new ol.View({
       center: ol.proj.fromLonLat([37.41, 8.82]),
