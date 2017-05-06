@@ -12,4 +12,10 @@
 
     > 각 <strong>contributor</strong>의 branch에 업로드 된 내용을 pull 하고, 브랜치를 merge
 
+## # Github ID/PW 저장
+
+    git config credential.helper store
+>
+    > 위 command를 실행 - 1회 push - ID/PW 저장
+
 ## # OpenLayers
