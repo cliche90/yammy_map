@@ -1,32 +1,28 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
     <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
-    <style>
-      .map {
-        height: 400px;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
     <script src="https://openlayers.org/en/v4.1.1/build/ol.js" type="text/javascript"></script>
-    <title>OpenLayers example</title>
+    <title>Yammy Map!!</title>
   </head>
   <body>
     <h2>My Map</h2>
     <div id="map" class="map"></div>
-    <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([37.41, 8.82]),
-          zoom: 4
-        })
-      });
-    </script>
+    <div id="info" style="display: none;"></div>
+    <label for="track">
+        track position
+        <input id="track" type="checkbox"/>
+    </label>
+    <p>
+        position accuracy : <code id="accuracy"></code>&nbsp;&nbsp;
+        altitude : <code id="altitude"></code>&nbsp;&nbsp;
+        altitude accuracy : <code id="altitudeAccuracy"></code>&nbsp;&nbsp;
+        heading : <code id="heading"></code>&nbsp;&nbsp;
+        speed : <code id="speed"></code>
+    </p>
+    <script src="/js/index.js"></script>
   </body>
 </html>

@@ -1,10 +1,12 @@
+var $ = require("jquery");
+
 var express = require('express');
 var request = require('request');
 var path = require('path');
 path.dirname('/views');
 
 var app = express();
-app.use(express.static(__dirname + "./static"));
+app.use(express.static(__dirname + "/static"));
 app.set('view engine', 'jade');
 app.set('views', 'views');
 
