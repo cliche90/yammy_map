@@ -7,9 +7,9 @@ app.set('view engine', 'jade');
 app.set('views', 'views');
 
 app.get('/yammy', (req, res) => {
-    res.render('index');
-}, (err, html) => {
-    if(err) throw err;
+    res.render('index', (err, html) => {
+        console.log(err);
+    });
 });
 
 app.listen(3000, () => { console.log("connected!!"); });
