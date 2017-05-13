@@ -1,5 +1,7 @@
+
 var map = new naver.maps.Map('map');
-var myaddress = '불정로 6';// 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
+var myaddress = '관악구';    // 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
+
 naver.maps.Service.geocode({ address: myaddress }, function (status, response) {
     if (status !== naver.maps.Service.Status.OK) {
         return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');

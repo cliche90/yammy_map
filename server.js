@@ -1,4 +1,3 @@
-var $ = require("jquery");
 var pug = require('pug');
 var request = require('request');
 var express = require('express');
@@ -11,6 +10,7 @@ app.set('views', 'views');
 app.get('/yammy', (req, res) => {
     console.log('yammy');
     res.render('template', {
+        clientId: "Fr6pjBddAuO8TE0g0nP9"
     });
 });
 

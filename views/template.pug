@@ -2,9 +2,25 @@ doctype html
 html
   head
     meta(charset='UTF-8')
-    title 네이버 지도 API - 주소로 지도 표시하기
+    title Yammy Map!!
     script(type='text/javascript', src='https://openapi.map.naver.com/openapi/v3/maps.js?clientId=Fr6pjBddAuO8TE0g0nP9&submodules=geocoder')
     link(rel="stylesheet" type="text/css" href="/css/template.css")
   body
     #map
+    #info(style="display: none;")
+    label(for="track")
+      div track position
+      input#track(type="checkbox")
+    p
+      div position accuracy :
+        code#accuracy &nbsp;&nbsp;
+      div altitude :
+        code#altitude &nbsp;&nbsp;
+      div altitude accuracy :
+        code#altitudeAccuracy &nbsp;&nbsp;
+      div heading :
+        code#heading &nbsp;&nbsp;
+      div speed
+        code#speed
+
     script(type='text/javascript', src='/js/template.js')
