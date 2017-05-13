@@ -1,18 +1,18 @@
 var $ = require("jquery");
-
-var express = require('express');
+var pug = require('pug');
 var request = require('request');
-var path = require('path');
-path.dirname('/views');
+var express = require('express');
 
 var app = express();
 app.use(express.static(__dirname + "/static"));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.set('views', 'views');
 
 app.get('/yammy', (req, res) => {
-    console.log('yammy')
-    res.sendFile(path.join(__dirname + '/views/index.html'));
+    console.log('yammy');
+    res.render('index', {
+        author : 'snacky'
+    });
 });
 
-app.listen(3000, () => { console.log("connected!!"); });
+app.listen(3000, () => console.log("connected!!") );
