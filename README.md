@@ -16,6 +16,6 @@
 
     git config credential.helper store
 >
-    > 위 command를 실행 - 1회 push - ID/PW 저장
+        > 위 command를 실행 - 1회 push - ID/PW 저장
 
 ## # OpenLayers
