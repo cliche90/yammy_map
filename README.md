@@ -18,6 +18,13 @@
 
 > 위 command를 실행 - 1회 push - ID/PW 저장
 
+## Git Fork Pull from parent
+```linux
+cd child
+git remote add parent <parent-url>
+git pull parent
+```
+
 ----------------------------------------------------
 
 ## # Environment
