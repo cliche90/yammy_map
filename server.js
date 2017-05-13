@@ -10,8 +10,7 @@ app.set('views', 'views');
 
 app.get('/yammy', (req, res) => {
     console.log('yammy');
-    res.render('index', {
-        author : 'snacky'
+    res.render('template', {
     });
 });
 

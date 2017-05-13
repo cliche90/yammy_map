@@ -24,6 +24,9 @@ cd child
 git remote add parent <parent-url>
 git pull parent
 ```
+## Remote Brnach Delete
+    git push origin :[branch 이름]
+
 
 ----------------------------------------------------
 
