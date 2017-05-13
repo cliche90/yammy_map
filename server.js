@@ -8,6 +8,10 @@ app.use(express.static(__dirname + "/static"));
 app.set('view engine', 'pug');
 app.set('views', 'views');
 
+//routing
+let crawlMap = require('./router/crawl')(app);
+app.use('/yammy/map',crawlMap);
+
 app.get('/yammy', (req, res) => {
     console.log('yammy');
     res.render('template', {
