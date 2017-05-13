@@ -1,3 +1,4 @@
+var $ = require('jquery');
 var pug = require('pug');
 var request = require('request');
 var express = require('express');
